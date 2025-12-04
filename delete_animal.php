@@ -7,10 +7,12 @@ if (isset($_POST['id'])) {
 }
 
 // Retour à la liste + message
-echo "Location: liste_animaux.php?delete = ${$_POST['id']}";
+echo "Location: liste_animaux_sup.php?delete = ${$_POST['id']}";
 
 header("Location: index.php");
             exit();
+
+
 
 
  
