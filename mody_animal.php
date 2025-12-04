@@ -49,9 +49,12 @@ $result = $stmt->get_result();
 $animal = $result->fetch_assoc();
 $stmt->close();
 
-// ----------- Charger tous les habitats ----------- //
+// ----------- Cha  rger tous les habitats ----------- //
 $habitats = $conn->query("SELECT id, nom_hab FROM habitat ORDER BY nom_hab ASC");
 ?>
+
+
+
 
 <div class="max-w-2xl mx-auto mt-10 bg-white p-8 rounded-xl shadow-md">
     <h2 class="text-3xl font-bold mb-6 text-gray-800">Modifier un animal</h2>
