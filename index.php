@@ -2,7 +2,8 @@
 <?php include "includes/header.php"; ?>
 
 <?php   
-// Charger la liste des habitats
+ 
+ 
 $habitats = $conn->query("SELECT id, nom_hab FROM habitat ORDER BY nom_hab ASC"); 
 ?>
 
