@@ -48,8 +48,7 @@ $stmt->execute();
 $result = $stmt->get_result();
 $animal = $result->fetch_assoc();
 $stmt->close();
-
-// ----------- Cha  rger tous les habitats ----------- //
+ 
 $habitats = $conn->query("SELECT id, nom_hab FROM habitat ORDER BY nom_hab ASC");
 ?>
 
