@@ -27,8 +27,20 @@ VALUES ('Savane', 'Zone chaude et sèche avec herbes hautes'),
        ('Forêt', 'Habitat dense avec beaucoup d’arbres');
 
 INSERT INTO animal (nom_ani, url_img, idhab)
-VALUES ('Lion', '/images/lion.png', 1),
-       ('Singe', '/images/singe.png', 2);
+VALUES ('Lion', '/img_animaux/lion.png', 1),
+       ('Singe', '/img_animaux/tiger.png', 2);
+       
+       UPDATE animal
+SET 
+    url_img = './img_animaux/lion.png'
+WHERE id = 1;
+
+UPDATE animal
+SET  
+    url_img = './img_animaux/tiger.png'
+WHERE id = 2;
+
+
 
 
 SELECT * FROM animal;
